@@ -1,3 +1,4 @@
+/* CSS RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,4 +41,58 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* CSS RESET END */
+
+/* Import styles */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Import styles end */
+
+
+#blog-hero {
+	height: 100vh;
+	background: url(../images/bg-img.jpg) center/cover no-repeat fixed;
+}
+.container {
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.blog-title {
+	margin: auto;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 10em;
+	color: aliceblue;
+}
+
+.underline {
+	border-bottom: 4px black solid;
+}
+
+#blog-main {
+	height: 100vh;
+	background: green;
+}
+
+#blog-footer {
+	height: 100vh;
+	background: blue;
+}
+
+/* All media queries */
+
+/* medium display */
+@media (min-width: 481px) and (max-width:768px) {
+	body {
+		/* properties that only apply to tablets */
+	}
+}
+
+/* small display only */
+@media (max-width:480px) {
+	body {
+		/* properties that only apply to phones */
+	}
 }
