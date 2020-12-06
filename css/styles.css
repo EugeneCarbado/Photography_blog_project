@@ -45,41 +45,83 @@ table {
 
 /* CSS RESET END */
 
-/* Import styles */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-/* Import styles end */
-
-
 #blog-hero {
 	height: 100vh;
 	background: url(../images/bg-img.jpg) center/cover no-repeat fixed;
 }
-.container {
-	margin: auto;
-    width: 50%;
-    padding: 10px;
-}
 
-.blog-title {
-	margin: auto;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 10em;
-	color: aliceblue;
-}
-
-.underline {
-	border-bottom: 4px black solid;
-}
-
-#blog-main {
+.grid-container-heading {
+	display: grid;
 	height: 100vh;
-	background: green;
-}
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 2px 2px;
+	grid-template-areas:
+	  "title title title title title"
+	  "title title title title title"
+	  "title title title title title"
+	  "title title title title title"
+	  "heading heading heading heading heading"
+	  "heading heading heading heading heading"
+	  "nav nav nav nav nav";
+  }
+  .title { 
+	  grid-area: title;
+	  font-size: 10em;
+	  color: #ffffff;
+	  font-family: 'Bebas Neue', cursive;
+	  
+	  padding-top: 100px;
+	  margin: 0 auto;
+	  margin-bottom: solid white 2px;
+	}
+  .nav { 
+	  grid-area: nav;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-around;
+	  padding-top: 20px;
+	}
+	
+	.nav a {
+		text-decoration: none;
+		font-family: 'Bitter', serif;
+		color: #ffffff;
+		font-size: 1.5em;
+	}
+  .heading {
+	   grid-area: heading;
+	   font-size: 1.1em;
+	   margin: 0 auto; 
+	   font-style: italic;
+	}
 
-#blog-footer {
+	.heading p {
+		text-decoration: none;
+		font-family: 'Bitter', serif;
+		color: #ffffff;
+		font-size: 1.5em;
+	}
+
+.grid-container {
 	height: 100vh;
-	background: blue;
-}
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	gap: 2px 2px;
+	grid-template-areas:
+	  "blog-post-1 blog-post-1 blog-post-2 blog-post-2 side-bar side-bar"
+	  "blog-post-1 blog-post-1 blog-post-2 blog-post-2 side-bar side-bar"
+	  "blog-post-3 blog-post-3 blog-post-4 blog-post-4 side-bar side-bar"
+	  "blog-post-3 blog-post-3 blog-post-4 blog-post-4 side-bar side-bar"
+	  "footer footer footer footer footer footer";
+  }
+  .blog-post-1 { grid-area: blog-post-1; }
+  .blog-post-2 { grid-area: blog-post-2; }
+  .blog-post-3 { grid-area: blog-post-3; }
+  .blog-post-4 { grid-area: blog-post-4; }
+  .side-bar { grid-area: side-bar; }
+  .footer { grid-area: footer; }
 
 /* All media queries */
 
