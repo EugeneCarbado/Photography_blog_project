@@ -72,7 +72,7 @@ html {
   
   .hero-hd { 
 	  grid-area: title;
-	  font-size: 10em;
+	  font-size: 30vh;
 	  color: #fff;
 	  font-family: 'Bebas Neue', cursive;
 	  /* background-color: red; */
@@ -98,6 +98,7 @@ html {
 	   grid-area: heading;
 	   margin: 0 auto; 
 	   font-style: italic;
+	   padding-top: 1.5em;
 	   /* background-color: green; */
 	}
 
