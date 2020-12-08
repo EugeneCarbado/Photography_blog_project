@@ -88,5 +88,18 @@
 	  transform: translateX(-50%) translateY(-50%);
 	}
   
-  .blog-subheading { grid-area: blog-subheading; }
+  .blog-subheading { 
+	  grid-area: blog-subheading; 
+	  font-family: 'Bitter', serif;
+	  font-style: italic;
+	  color: #fff;
+	  margin: 0;
+	  padding: 0;
+	  text-align: center;
+	  font-size: 0.5em;
+	  position: absolute;
+	  top: 60%;
+	  left: 50%;
+	  transform: translateX(-50%) translateY(-50%);
+	}
   
