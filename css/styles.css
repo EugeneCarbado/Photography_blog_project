@@ -1,200 +1,92 @@
-/* CSS RESET */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
+* {
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	margin: 0;
 }
 
-/* CSS RESET END */
+:root {
+	--main-radius: 5px;
+	--main-padding: 5px;
+  }
 
-html {
-	font-size: 16px;
-}
+  body {
+	font-family: 'Bebas Neue', 'Bitter', serif, cursive;
+  }
 
-#blog-hero {
+  .grid-container {
 	height: 100vh;
-	background: url(../images/bg-img.jpg) center/cover no-repeat fixed;
-}
-
-.grid-container-hero {
 	display: grid;
-	height: 100vh;
-	grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	gap: 2px 2px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100vh 22vh 22vh 22vh 22vh 12vh;
+	gap: 2px 0px;
 	grid-template-areas:
-	  "title title title title title"
-	  "title title title title title"
-	  "title title title title title"
-	  "title title title title title"
-	  "heading heading heading heading heading"
-	  "heading heading heading heading heading"
-	  "nav nav nav nav nav";
+	  "blog-hero"
+	  "content-1"
+	  "content-2"
+	  "content-3"
+	  "content-4"
+	  "blog-footer";
   }
   
-  .hero-hd { 
-	  grid-area: title;
-	  font-size: 30vh;
-	  color: #fff;
-	  font-family: 'Bebas Neue', cursive;
-	  /* background-color: red; */
-	  padding-top: 100px;
-	  margin: 0 auto;
-	}
-
-  .nav { 
-	  grid-area: nav;
-	  display: flex;
-	  flex-direction: row;
-	  justify-content: space-around;
-	  /* background-color: blue; */
-	}
-	
-	.nav a {
-		text-decoration: none;
-		font-family: 'Bitter', serif;
-		color: #fff;
-		font-size: 1.5em;
-	}
-  .heading {
-	   grid-area: heading;
-	   margin: 0 auto; 
-	   font-style: italic;
-	   padding-top: 1.5em;
-	   /* background-color: green; */
-	}
-
-	.heading h2 {
-		text-decoration: none;
-		font-family: 'Bitter', serif;
-		color: #fff;
-		font-size: 1.5em;
-	}
-
-.grid-container {
-	height: 100vh;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-	gap: 2px 2px;
-	grid-template-areas:
-	  "blog-post-1 blog-post-1 blog-post-2 blog-post-2 side-bar side-bar"
-	  "blog-post-1 blog-post-1 blog-post-2 blog-post-2 side-bar side-bar"
-	  "blog-post-3 blog-post-3 blog-post-4 blog-post-4 side-bar side-bar"
-	  "blog-post-3 blog-post-3 blog-post-4 blog-post-4 side-bar side-bar"
-	  "footer footer footer footer footer footer";
-  }
-  .blog-post-1 { 
-	  grid-area: blog-post-1; 
-	}
-
-  .blog-post-2 { 
-	  grid-area: blog-post-2; 
-	}
-
-  .blog-post-3 { 
-	  grid-area: blog-post-3; 
-	}
-
-  .blog-post-4 { 
-	  grid-area: blog-post-4; 
-	}
-
-  .side-bar { 
-	  grid-area: side-bar; 
-	}
-
-  .footer { 
-	  grid-area: footer; 
-	}
-
-/* All media queries */
-
-/* medium display */
-@media (min-width: 481px) and (max-width:768px) {
-	body {
-		/* properties that only apply to tablets */
-	}
-
-	hero-hd { 
-		grid-area: title;
-		font-size: 5em;
-		padding-top: em;
-		
-	  }
-
-}
-
-/* small display only */
-@media (max-width:480px) {
-	body {
-		/* properties that only apply to phones */
-	}
-
-	.hero-hd { 
-		grid-area: title;
-		font-size: 4em;
-		padding-top: 3em;
-	  }
-
-	  .grid-container-hero {
-		display: grid;
-		height: 100vh;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-		gap: 2px 2px;
-		grid-template-areas:
-		  "title"
-		  "title"
-		  "title"
-		  "title"
-		  "heading"
-		  "heading"
-		  "nav";
-	  }
-
-	  .heading {
-		grid-area: heading;
-		font-size: 0.6em;
-		text-align: center;
+  .blog-footer { 
+	  grid-area: blog-footer;
+	  background-color: red;
+	  border-radius: var(--main-radius);
+  	  padding-top: var(--main-padding);
 	 }
-
-}
+  
+  .content-1 { 
+	  grid-area: content-1; 
+	  background-color: blue;
+	  border-radius: var(--main-radius);
+  	  padding-top: var(--main-padding);
+	}
+  
+  .content-2 { 
+	  grid-area: content-2; 
+	  background-color:rebeccapurple;
+	  border-radius: var(--main-radius);
+  	  padding-top: var(--main-padding);
+	}
+  
+  .content-3 { 
+	  grid-area: content-3; 
+	  background-color: yellow;
+	  border-radius: var(--main-radius);
+  	  padding-top: var(--main-padding);
+	}
+  
+  .content-4 { 
+	  grid-area: content-4; 
+	  background-color: green;
+	  border-radius: var(--main-radius);
+  	  padding-top: var(--main-padding);
+	}
+  
+  .blog-hero {
+	/* height: 100vh; */
+	display: grid;
+	background: url(../images/bg-img.jpg) center/cover no-repeat fixed;
+	grid-template-columns: 1fr;
+	grid-template-rows: 3fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+	  "blog-heading"
+	  "blog-subheading";
+	grid-area: blog-hero;
+  }
+  
+  .blog-heading { 
+	  grid-area: blog-heading; 
+	  color: #fff;
+	  margin: 0;
+	  padding: 0;
+	  text-align: center;
+	  font-size: 2em;
+	  position: absolute;
+	  top: 40%;
+	  left: 50%;
+	  transform: translateX(-50%) translateY(-50%);
+	}
+  
+  .blog-subheading { grid-area: blog-subheading; }
+  
