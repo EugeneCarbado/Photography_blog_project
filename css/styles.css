@@ -79,23 +79,6 @@
 	  "blog-nav";
 	grid-area: blog-hero;
   }
-
-  .blog-nav {
-	  grid-area: blog-nav;
-	  /* background-color: rebeccapurple;
-	  font-family: 'Bitter', serif;
-	  font-style: italic;
-	  color: #fff;
-	  margin: 0;
-	  padding: 0;
-	  text-align: center;
-	  font-size: 1em;
-	  letter-spacing: 0.1em;
-	  position: absolute;
-	  top: 5%;
-	  left: 50%;
-	  transform: translateX(-50%) translateY(-50%); */
-  }
   
   .blog-heading { 
 	  grid-area: blog-heading; 

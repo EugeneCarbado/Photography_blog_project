@@ -1,9 +1,9 @@
-/* .menu-wrap {
+.blog-nav {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
-} */
+}
 
 .blog-nav .toggler {
     position: absolute;
@@ -133,7 +133,7 @@
     color: #fff;
     font-family: 'Bitter', serif;
     font-size: 3em;
-    padding-top: 2em;
+    padding-top: 1.5em;
 
 }
 
