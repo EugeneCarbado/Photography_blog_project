@@ -10,45 +10,84 @@
     <link rel="stylesheet" href="./css/menu.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Blog hero section -->
-    <section id="blog-hero">
-        <div class="blog-nav">
-            <input type="checkbox" class="toggler">
-            <div class="hamburger"><div></div></div>
-            <div class="menu">
+    <!-- nav hamburger -->
+    <div class="blog-nav">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <div>
                 <div>
-                    <div>
-                        <ul>
-                            <li><a href="#"></a>Home</li>
-                            <li><a href="#"></a>Blog</li>
-                            <li><a href="#"></a>Shop</li>
-                            <li><a href="#"></a>Contact</li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li><a href="#hero-section">Home</a></li>
+                        <li><a href="#blog-section">Blog</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="grid-container">
-            <div class="blog-footer"></div>
-            <div class="content-1"></div>
-            <div class="content-2"></div>
-            <div class="content-3"></div>
-            <div class="content-4"></div>
-            <div class="blog-hero">
-              <div class="blog-heading">
-                  <h1>analog art</h1>
-              </div>
-              <div class="blog-subheading">
-                  <h2>A blog for analog photography enthusiasts.</h2>
-              </div>
+    </div>
+    <!-- nav hamburger end -->
+
+    <!-- grid container for blog hero -->
+    <section id="hero-section">
+        <div class="blog-hero">
+            <div class="blog-heading">
+                <h1>analog art</h1>
             </div>
-          </div>
+            <div class="blog-subheading">
+                <h2>A blog for analog photography enthusiasts.</h2>
+            </div>
+        </div>
     </section>
-    <!-- Blog hero section end -->
+    <!-- grid container for blog hero end -->
+
+    <!-- grid container for blog -->
+    <section id="blog-section">
+        <div class="grid-container">
+            <!-- blog post contents -->
+            <div class="blog-post1">
+                <img src="images/post-img1.jpg" alt="">
+      <div class="caption">
+        <h3>Photo One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+      </div>
+            </div>
+            <div class="content-2">
+                <img src="images/post-img2.jpg" alt="">
+      <div class="caption">
+        <h3>Photo One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+      </div>
+            </div>
+            <div class="content-3">
+                <img src="images/post-img3.jpg" alt="">
+      <div class="caption">
+        <h3>Photo One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+      </div>
+            </div>
+            <div class="content-4">
+                <img src="images/post-img4.jpg" alt="">
+      <div class="caption">
+        <h3>Photo One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+      </div>
+            </div>
+            <!-- blog post contents -->
+
+            <!-- blog footer -->
+            <footer class="blog-footer"></footer>
+            <!-- blog footer end -->
+        </div>
+    </section>
+    <!-- Blog section end -->
 
 </body>
 

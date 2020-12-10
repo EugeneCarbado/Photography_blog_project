@@ -1,3 +1,4 @@
+/* Root stored variables and colors */
 :root {
 	--main-radius: 5px;
 	--main-padding: 5px;
@@ -6,68 +7,23 @@
 	--menu-speed: 0.75s;
   }
 
+
+  /* Reset for margins and padding and set all elements to border-box */
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
 
+/* Set the body styles for fonts and sizing */
   body {
 	font-family: 'Bebas Neue', 'Bitter', serif, cursive;
 	font-size: 16px;
   }
 
-  .grid-container {
-	height: 100vh;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 100vh 22vh 22vh 22vh 22vh 12vh;
-	gap: 2px 0px;
-	grid-template-areas:
-	  "blog-hero"
-	  "content-1"
-	  "content-2"
-	  "content-3"
-	  "content-4"
-	  "blog-footer";
-  }
-  
-  .blog-footer { 
-	  grid-area: blog-footer;
-	  background-color: red;
-	  border-radius: var(--main-radius);
-  	  padding-top: var(--main-padding);
-	 }
-  
-  .content-1 { 
-	  grid-area: content-1; 
-	  background-color: blue;
-	  border-radius: var(--main-radius);
-  	  padding-top: var(--main-padding);
-	}
-  
-  .content-2 { 
-	  grid-area: content-2; 
-	  background-color:rebeccapurple;
-	  border-radius: var(--main-radius);
-  	  padding-top: var(--main-padding);
-	}
-  
-  .content-3 { 
-	  grid-area: content-3; 
-	  background-color: yellow;
-	  border-radius: var(--main-radius);
-  	  padding-top: var(--main-padding);
-	}
-  
-  .content-4 { 
-	  grid-area: content-4; 
-	  background-color: green;
-	  border-radius: var(--main-radius);
-  	  padding-top: var(--main-padding);
-	}
-  
+  /* blog heading grid */
   .blog-hero {
+	height: 100vh;
 	display: grid;
 	background: url(../images/bg-img.jpg) center/cover no-repeat fixed;
 	grid-template-columns: 1fr;
@@ -77,7 +33,6 @@
 	  "blog-heading"
 	  "blog-subheading"
 	  "blog-nav";
-	grid-area: blog-hero;
   }
   
   .blog-heading { 
@@ -110,4 +65,53 @@
 	  left: 50%;
 	  transform: translateX(-50%) translateY(-50%);
 	}
+
+  /* main grid container */
+  .grid-container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 50vh 50vh 50vh 50vh 12vh;
+	gap: 2px 0px;
+	grid-template-areas:
+	  "blog-post1"
+	  "content-2"
+	  "content-3"
+	  "content-4"
+	  "blog-footer";
+  }
+
+  img {
+	  width: 100%;
+  }
   
+	/* blog cards */
+  .blog-post1 { 
+	  grid-area: blog-post1;
+	}
+  
+  .content-2 { 
+	  grid-area: content-2; 
+	  border-radius: var(--main-radius);
+  	  padding-top: var(--main-padding);
+	}
+  
+  .content-3 { 
+	  grid-area: content-3; 
+	  border-radius: var(--main-radius);
+  	  padding-top: var(--main-padding);
+	}
+  
+  .content-4 { 
+	  grid-area: content-4; 
+	  border-radius: var(--main-radius);
+  	  padding-top: var(--main-padding);
+	}
+
+	/* blog footer */
+	.blog-footer { 
+		grid-area: blog-footer;
+		background-color: red;
+		border-radius: var(--main-radius);
+		  padding-top: var(--main-padding);
+	   }
