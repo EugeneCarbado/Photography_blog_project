@@ -17,7 +17,7 @@
 
 /* Set the body styles for fonts and sizing */
   body {
-	font-family: 'Bebas Neue', 'Bitter', serif, cursive;
+	font-family: 'Bitter', cursive;
 	font-size: 16px;
   }
 
@@ -40,6 +40,7 @@
 	  color: #fff;
 	  margin: 0;
 	  padding: 0;
+	  font-family: 'Bebas Neue', serif;
 	  text-align: center;
 	  font-size: 3em;
 	  letter-spacing: 0.1em;
@@ -51,8 +52,7 @@
 	}
   
   .blog-subheading { 
-	  grid-area: blog-subheading; 
-	  font-family: 'Bitter', serif;
+	  grid-area: blog-subheading;
 	  font-style: italic;
 	  color: #fff;
 	  margin: 0;
@@ -75,38 +75,24 @@
 	gap: 2px 0px;
 	grid-template-areas:
 	  "blog-post1"
-	  "content-2"
-	  "content-3"
-	  "content-4"
+	  "blog-post2"
+	  "blog-post3"
+	  "blog-post4"
 	  "blog-footer";
   }
 
-  img {
-	  width: 100%;
-  }
-  
 	/* blog cards */
-  .blog-post1 { 
-	  grid-area: blog-post1;
-	}
-  
-  .content-2 { 
-	  grid-area: content-2; 
+  .blog-post1, .blog-post2, .blog-post3, .blog-post4  { 
+	  grid-area: blog-post1, 
+	             blog-post2, 
+	             blog-post3, 
+	             blog-post4;
 	  border-radius: var(--main-radius);
-  	  padding-top: var(--main-padding);
+		padding-top: var(--main-padding);
+		
 	}
-  
-  .content-3 { 
-	  grid-area: content-3; 
-	  border-radius: var(--main-radius);
-  	  padding-top: var(--main-padding);
-	}
-  
-  .content-4 { 
-	  grid-area: content-4; 
-	  border-radius: var(--main-radius);
-  	  padding-top: var(--main-padding);
-	}
+
+
 
 	/* blog footer */
 	.blog-footer { 
@@ -114,4 +100,13 @@
 		background-color: red;
 		border-radius: var(--main-radius);
 		  padding-top: var(--main-padding);
+	   }
+
+	   img {
+		   width: 100%;
+	   }
+
+	   .blog-article_title {
+		font-family: 'Bebas Neue', serif;
+		text-decoration: none;
 	   }
