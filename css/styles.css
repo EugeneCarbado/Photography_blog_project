@@ -1,4 +1,8 @@
 /* Root stored variables and colors */
+@import "brands.css";
+@import "menu.css";
+
+
 :root {
 	--main-radius: 5px;
 	--main-padding: 5px;
@@ -66,27 +70,7 @@
 	  transform: translateX(-50%) translateY(-50%);
 	}
 
-  /* main grid container */
-
-
-
-
-	/* blog footer */
-	.blog-footer { 
-		grid-area: blog-footer;
-		background-color: red;
-		border-radius: var(--main-radius);
-		  padding-top: var(--main-padding);
-	   }
-
-	   img {
-		   width: 100%;
-	   }
-
-	   .blog-article_title {
-		font-family: 'Bebas Neue', serif;
-		text-decoration: none;
-	   }
+  /* card container styles */
 
 	   .card-container {
 		   margin: 0 auto;
@@ -94,6 +78,7 @@
 		   display: grid;
 		   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
 		   gap: 20px;
+		   padding-top: 20px;
 		   
 	   }
 
@@ -145,3 +130,12 @@
 		.card__link:hover {
 			text-decoration: underline;
 		}
+
+			/* blog footer */
+	.blog-footer { 
+		height: 20vh;
+		display: flex;
+		justify-self: space-around;
+		background-color: #2D7DD2;
+	   }
+
