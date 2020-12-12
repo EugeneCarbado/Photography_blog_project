@@ -99,9 +99,14 @@
 		   background: #fafafa;
 	   }
 
+	   .card__content a {
+		   text-decoration: none;
+		   color: #555;
+	   }
+
 	   .card__content h3 {
 		   font-size: 2em;
-		   border-bottom: 2px #1A2A4C solid;
+		   border-bottom: 2px #2D7DD2 solid;
 	   }
 
 	   .card-content > p:first-of-type {
@@ -130,6 +135,10 @@
 
 		.card__link:hover {
 			text-decoration: underline;
+		}
+
+		time {
+			color: #2D7DD2;
 		}
 
 			/* blog footer */
