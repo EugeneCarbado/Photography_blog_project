@@ -151,19 +151,20 @@
 
 			.social-media {
 				margin: 20px 0;
+				display: flex;
+				justify-content: space-between;
 			}
 
 			.social-media a {
 				color: #2D7DD2;
-				margin-right: 25px;
 				font-size: 1.2em;
 				text-decoration: none;
 				transition: 0.3s linear;
 			}
 
-			.social-media a:hover {
+			/* .social-media a:hover {
 				color: #001A21;
-			}
+			} */
 
 			.left-col {
 				width: 100%;
