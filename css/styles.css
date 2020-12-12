@@ -141,6 +141,12 @@
 			color: #2D7DD2;
 		}
 
+		/* author styles */
+
+		.author__image {
+			width: 20vh;
+		}
+
 			/* blog footer */
 
 			footer {
