@@ -1,6 +1,7 @@
 /* Root stored variables and colors */
 @import "brands.css";
 @import "menu.css";
+@import "media.css";
 
 
 :root {
@@ -91,6 +92,12 @@
 		   width: 100%;
 		   display: block;
 	   }
+
+	   figcaption {
+		font-size: 0.6em;
+		margin: 0.4rem 0;
+		padding-left: 10px;
+	}
 
 	   .card__content {
 		   line-height: 1.5;
@@ -242,4 +249,61 @@
 
 			.btn:hover {
 				opacity: 0.7s;
+			}
+
+			/* Media queries */
+
+			/* Medium display */
+			@media (min-width:600px) and (max-width:900px) {
+				
+				.blog-heading {
+					font-size: 5em;
+				}
+
+				.blog-subheading {
+					font-size: 0.8em;
+				}
+
+				.footer-container {
+					max-width: 800px;
+				}
+
+				.social-media {
+					justify-content: space-around;
+				}
+			
+			}
+			
+			/* Larger display */
+			@media (min-width:901px) {
+
+				.blog-heading {
+					font-size: 6em;
+				}
+
+				.blog-subheading {
+					font-size: 1em;
+				}
+
+				.card-container {
+
+					grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+					
+				}
+
+				.footer-container {
+					max-width: 1300px;
+				}
+
+				.right-col {
+					width: inherit;
+				}
+			
+				.left-col {
+					width: inherit;
+				}
+			    .btn {
+					margin: inherit;
+					margin-top: none;
+				}
 			}
