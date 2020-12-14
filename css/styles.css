@@ -97,6 +97,7 @@ figcaption {
 }
 
 .card__content {
+  height: 100%;
   line-height: 1.5;
   font-size: 0.9em;
   padding: 20px;
