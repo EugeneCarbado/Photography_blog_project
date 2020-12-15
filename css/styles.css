@@ -21,7 +21,12 @@
 /* Set the body styles for fonts and sizing */
 body {
   font-family: "Bitter", cursive;
+  font-weight: 400;
   font-size: 16px;
+}
+
+.main-header {
+  padding: 0;
 }
 
 /* blog heading grid */
@@ -76,14 +81,15 @@ body {
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-auto-rows: auto;
   gap: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.card {
+/* .card {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .card__image {
   width: 100%;
@@ -97,7 +103,6 @@ figcaption {
 }
 
 .card__content {
-  height: 100%;
   line-height: 1.5;
   font-size: 0.9em;
   padding: 20px;
@@ -105,6 +110,7 @@ figcaption {
 }
 
 .card__content .card__heading {
+  font-weight: 400;
   font-size: 2em;
   border-bottom: 2px #2d7dd2 solid;
 }
@@ -118,14 +124,15 @@ figcaption {
 }
 
 .card__info {
-  padding: 15px;
   display: flex;
+  padding: 15px;
   justify-content: center;
   align-items: center;
   color: #555;
   background: #eee;
   font-size: 0.8em;
   border-bottom: 2px solid #ccc;
+
 }
 
 .card__link {

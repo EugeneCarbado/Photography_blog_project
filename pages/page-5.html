@@ -19,36 +19,38 @@
 
 <body>
     <!-- nav hamburger -->
-    <nav class="blog-nav">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-            <div></div>
-        </div>
-        <div class="menu">
-            <div>
+    <header class="main-header">
+        <nav class="blog-nav">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
                 <div>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../index.html#blog-section">Blog</a></li>
-                        <li><a href="../index.html#archives">Archives</a></li>
-                    </ul>
+                    <div>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../index.html#blog-section">Blog</a></li>
+                            <li><a href="../index.html#archives">Archives</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- nav hamburger end -->
+        </nav>
+        <!-- nav hamburger end -->
 
-    <!-- grid container for blog hero -->
-    <section id="hero-section">
-        <div class="blog-hero">
-            <div class="blog-heading">
-                <h1>analog art</h1>
+        <!-- grid container for blog hero -->
+        <section id="hero-section">
+            <div class="blog-hero">
+                <div class="blog-heading">
+                    <h1>analog art</h1>
+                </div>
+                <div class="blog-subheading">
+                    <h2>A blog for analog photography enthusiasts.</h2>
+                </div>
             </div>
-            <div class="blog-subheading">
-                <h2>A blog for analog photography enthusiasts.</h2>
-            </div>
-        </div>
-    </section>
+        </section>
+    </header>
     <!-- grid container for blog hero end -->
 
     <!-- grid container for blog -->
@@ -58,11 +60,14 @@
             <!-- blog post contents -->
             <div class="page__card">
                 <img src="../images/post-img5.jpg" alt="La front garden" class="page__card__image">
-                <figcaption>Shot by Eugene Carbado.</figcaption>
+                <figure>
+                    <figcaption><u>Shot by James Smith.</u></figcaption>
+                </figure>
                 <div class="page__card__content">
                     <h3 class="page__card__heading">A day around LA's gardens.</h3>
                     <br>
-                    <blockquote cite="page-1.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at!</blockquote>
+                    <blockquote cite="page-5.html"><em>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Molestias, at!</em></blockquote>
                     <br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eveniet voluptate deleniti
                         laboriosam, ab magnam?</p>
@@ -85,11 +90,25 @@
                         ea iusto?
                     </p>
                     <br>
-                    <p>Posted on <time>June, 18th 2020</time> by Eugene</p>
+                    <p>Posted on <time><b>June, 18th 2020</b></time> by Eugene</p>
                 </div>
             </div>
     </section>
     <!-- Blog section end -->
+
+    <!-- author info -->
+    <aside class="article-aside">
+        <div class="author-info">
+            <figure class="author-figure">
+                <img src="../images/author.jpeg" class="author-img" alt="Eugene Carbado">
+                <p class="author-name"><em>Eugene Carbado</em></p>
+                <p class="author-company">Photographer at Lomography</p>
+                <p class="author-bio"><em> - I love all things analog! I share photography that inspires me. Feel free to subscribe to my newsletter for regular updates.</em></p>
+            </figure>
+        </div>
+    </aside>
+
+    <!-- author info end -->
 
     <!-- blog footer -->
     <footer>

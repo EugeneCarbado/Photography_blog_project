@@ -19,10 +19,6 @@
   display: block;
 }
 
-blockquote {
-    font-style: italic;
-}
-
 figcaption {
   font-size: 0.6em;
   margin: 0.4rem 0;
@@ -51,6 +47,35 @@ figcaption {
 
 time {
   color: #2d7dd2;
+}
+
+/* author styles */
+
+.article-aside {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.author-info {
+  line-height: 1.2em;
+}
+.author-img {
+  max-width: 10rem;
+  border: 2px #2d7dd2 solid;
+  border-radius: 100%;
+}
+
+.author-name {
+  border-bottom: 2px #2d7dd2 solid;
+  margin-bottom: 1em;
+}
+
+.author-company {
+  padding-bottom:1em ;
 }
 
 /* Media queries */
